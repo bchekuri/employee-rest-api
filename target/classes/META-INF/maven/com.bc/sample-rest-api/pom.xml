@@ -1,0 +1,110 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.bc</groupId>
+  <artifactId>sample-rest-api</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>sample-rest-api</name>
+  <description>Sample Rest API</description>
+  
+  <properties>
+  	<java-version>1.8</java-version>
+  </properties>
+  
+  <parent>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-parent</artifactId>
+      <version>2.0.1.RELEASE</version>
+  </parent>
+  
+  <scm>
+  	<connection>scm:git:https://github.com/bchekuri/sample-rest-api</connection>
+  	<url>https://github.com/bchekuri/sample-rest-api</url>
+  	<developerConnection>scm:git:https://github.com/bchekuri/sample-rest-api</developerConnection>
+  </scm>
+  
+  <distributionManagement>
+  	<snapshotRepository>
+  		<id>snapshot</id>
+  		<name>Sample Rest API</name>
+  		<url>https://maven/maven-externalfacing</url>
+  	</snapshotRepository>
+  	<repository>
+  		<id>central</id>
+  		<name>Sample Rest API</name>
+  		<url>https://maven/maven-externalfacing</url>
+  	</repository>
+  </distributionManagement>
+  
+  <dependencies>
+       <!-- <dependency>
+		    <groupId>javax.servlet</groupId>
+		    <artifactId>javax.servlet-api</artifactId>
+		    <scope>provided</scope>
+		</dependency>
+		<dependency>
+		    <groupId>javax.inject</groupId>
+		    <artifactId>javax.inject</artifactId>
+		    <version>1</version>
+		</dependency>
+		<dependency>
+		    <groupId>javax.ws.rs</groupId>
+		    <artifactId>javax.ws.rs-api</artifactId>
+		    <version>2.0</version>
+		</dependency> -->
+  		<dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+		    <groupId>org.springframework.security</groupId>
+		    <artifactId>spring-security-web</artifactId>
+		</dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+		    <groupId>org.springframework.boot</groupId>
+		    <artifactId>spring-boot-starter-logging</artifactId>
+		</dependency>
+        <dependency>
+            <groupId>com.jayway.jsonpath</groupId>
+            <artifactId>json-path</artifactId>
+            <scope>test</scope>
+        </dependency>
+  </dependencies>
+  
+  <build>
+	<plugins>
+         <plugin>
+             <groupId>org.springframework.boot</groupId>
+             <artifactId>spring-boot-maven-plugin</artifactId>
+             <configuration>
+             	<addResources>false</addResources>
+             	<jvmArguments>
+             	-XX:NewRatio=3 -XX:SurvivorRatio=8
+             	-Dhttps.protocals=TLSv1.1,TLSv1.2
+             	</jvmArguments>
+             </configuration>
+             <dependencies>
+             	<dependency>
+				    <groupId>org.springframework</groupId>
+				    <artifactId>springloaded</artifactId>
+				    <version>1.2.8.RELEASE</version>
+				</dependency>
+             </dependencies>
+         </plugin>
+         <plugin>
+	        <groupId>org.apache.maven.plugins</groupId>
+	        <artifactId>maven-release-plugin</artifactId>
+	        <dependencies>
+	        	<dependency>
+	        	</dependency>
+	        </dependencies>
+	      </plugin>
+     </plugins>
+  </build>
+  
+  
+</project>
