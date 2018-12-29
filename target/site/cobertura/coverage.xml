@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
+
+<coverage line-rate="0.25" branch-rate="1.0" lines-covered="1" lines-valid="4" branches-covered="0" branches-valid="0" complexity="0.0" version="2.1.1" timestamp="1546062188592">
+	<sources>
+		<source>C:/Users/BC/Documents/GitHub/sample-springboot-employee-rest-api/target/generated-sources/annotations</source>
+		<source>--source</source>
+		<source>C:/Users/BC/Documents/GitHub/sample-springboot-employee-rest-api/src/main/java</source>
+	</sources>
+	<packages>
+		<package name="com.bc.cofig" line-rate="0.0" branch-rate="1.0" complexity="0.0">
+			<classes>
+				<class name="com.bc.cofig.ApplicationConfig" filename="com/bc/cofig/ApplicationConfig.java" line-rate="0.0" branch-rate="1.0" complexity="0.0">
+					<methods>
+						<method name="&lt;init&gt;" signature="()V" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="11" hits="0" branch="false"/>
+							</lines>
+						</method>
+					</methods>
+					<lines>
+						<line number="11" hits="0" branch="false"/>
+					</lines>
+				</class>
+			</classes>
+		</package>
+		<package name="com.bc.model" line-rate="0.5" branch-rate="1.0" complexity="0.0">
+			<classes>
+				<class name="com.bc.model.EmployeeData" filename="com/bc/model/EmployeeData.java" line-rate="0.5" branch-rate="1.0" complexity="0.0">
+					<methods>
+						<method name="&lt;clinit&gt;" signature="()V" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="9" hits="1" branch="false"/>
+							</lines>
+						</method>
+						<method name="&lt;init&gt;" signature="()V" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="7" hits="0" branch="false"/>
+							</lines>
+						</method>
+					</methods>
+					<lines>
+						<line number="7" hits="0" branch="false"/>
+						<line number="9" hits="1" branch="false"/>
+					</lines>
+				</class>
+			</classes>
+		</package>
+		<package name="com.bc.util" line-rate="0.0" branch-rate="1.0" complexity="0.0">
+			<classes>
+				<class name="com.bc.util.Constants" filename="com/bc/util/Constants.java" line-rate="0.0" branch-rate="1.0" complexity="0.0">
+					<methods>
+						<method name="&lt;init&gt;" signature="()V" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="3" hits="0" branch="false"/>
+							</lines>
+						</method>
+					</methods>
+					<lines>
+						<line number="3" hits="0" branch="false"/>
+					</lines>
+				</class>
+			</classes>
+		</package>
+	</packages>
+</coverage>
