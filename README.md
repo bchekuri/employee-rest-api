@@ -1,2 +1,2 @@
-# employee-rest-api
+# sample springboot employee rest api
 Example of Simple Rest API using spring boot
